@@ -1,1 +1,1 @@
-http http://gondor.apana.org.au/~herbert/dash/files/dash-${version}.tar.gz 4189358647
+http "http://gondor.apana.org.au/~herbert/dash/files/dash-${version}.tar.gz" 4189358647
