@@ -1,0 +1,5 @@
+cd "llvm-project-llvmorg-${version}" || exit 1
+
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_BUILD_TYPE=Release -S libcxx -B libcxx-build
+cmake --build libcxx-build -j "${jobs}"
+cmake --build libcxx-build --target install
