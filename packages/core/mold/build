@@ -1,0 +1,5 @@
+cd "mold-${version}" || exit 1
+
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_BUILD_TYPE=Release -B build
+cmake --build build -j "${jobs}"
+cmake --build build --target install
