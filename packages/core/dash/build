@@ -1,0 +1,5 @@
+cd "dash-${version}" || exit 1
+
+./configure --prefix=/usr
+make -j "${jobs}"
+make install
