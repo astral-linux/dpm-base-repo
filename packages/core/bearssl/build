@@ -1,0 +1,12 @@
+cd "bearssl-${version}" || exit 1
+
+make -j "${jobs}"
+
+cp build/brssl /usr/bin
+chmod 755 /usr/bin/brssl
+
+cp build/libbearssl.a /usr/lib
+chmod 644 /usr/lib/libbearssl.a
+
+cp build/libbearssl.so /usr/lib
+chmod 644 /usr/lib/libbearssl.so

@@ -1,0 +1,4 @@
+cd "bearssl-${version}/build" || exit 1
+
+./testx509
+./testcrypto all
