@@ -1,0 +1,5 @@
+cd ubase || exit 1
+git checkout "${version}" || exit 1
+
+make -j "${jobs}" ubase-box
+make PREFIX=/usr ubase-box-install

@@ -1,0 +1,5 @@
+cd sbase || exit 1
+git checkout "${version}" || exit 1
+
+make -j "${jobs}" sbase-box
+make PREFIX=/usr sbase-box-install
