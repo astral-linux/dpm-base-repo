@@ -1,4 +1,4 @@
-cd sinit-"${version}" || exit 1
+cd "sinit-${version}" || exit 1
 
 make -j "${jobs}"
 make PREFIX=/usr install
