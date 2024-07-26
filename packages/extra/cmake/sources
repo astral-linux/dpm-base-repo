@@ -1,0 +1,1 @@
+http "https://github.com/Kitware/CMake/releases/download/v${version}/cmake-${version}.tar.gz" 157739025

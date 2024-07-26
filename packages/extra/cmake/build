@@ -1,0 +1,5 @@
+cd "cmake-${version}" || exit 1
+
+./bootstrap --prefix=/usr
+make -j "${jobs}"
+make install
