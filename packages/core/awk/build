@@ -1,0 +1,10 @@
+cd "awk-${version}" || exit 1
+
+make YACC="yacc -d -b awkgram" -j "${jobs}"
+
+cp a.out /usr/bin/awk
+chmod 755 /usr/bin/awk
+
+mkdir -p /usr/share/man/man1
+cp awk.1 /usr/share/man/man1
+chmod 644 /usr/share/man/man1/awk.1

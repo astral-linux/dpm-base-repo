@@ -1,0 +1,3 @@
+cd "awk-${version}" || exit 1
+
+./REGRESS
