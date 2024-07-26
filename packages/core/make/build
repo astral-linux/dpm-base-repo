@@ -1,0 +1,6 @@
+cd "make-${version}" || exit 1
+
+./configure --prefix=/usr
+./build.sh
+
+./make install
