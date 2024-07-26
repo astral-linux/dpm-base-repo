@@ -1,0 +1,5 @@
+cd "OpenDoas-${version}" || exit 1
+
+./configure --prefix=/usr
+gmake -j "${jobs}"
+gmake install
