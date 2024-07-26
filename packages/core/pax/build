@@ -1,0 +1,20 @@
+cd pax || exit 1
+
+sh Build.sh -r
+
+cp pax /usr/bin
+chmod 755 /usr/bin/pax
+
+ln -s pax /usr/bin/paxtar
+ln -s pax /usr/bin/paxcpio
+
+mkdir -p /usr/share/man/man1
+
+cp mans/pax.1 /usr/share/man/man1
+chmod 644 /usr/share/man/man1/pax.1
+
+cp mans/tar.1 /usr/share/man/man1/paxtar.1
+chmod 644 /usr/share/man/man1/paxtar.1
+
+cp mans/cpio.1 /usr/share/man/man1/paxcpio.1
+chmod 644 /usr/share/man/man1/paxcpio.1
