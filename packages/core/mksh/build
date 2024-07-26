@@ -1,0 +1,16 @@
+cd mksh || exit 1
+
+sh Build.sh -r
+
+cp mksh /usr/bin
+chmod 755 /usr/bin/mksh
+
+echo "/bin/mksh" >> /etc/shells
+
+mkdir -p /usr/share/doc/mksh/examples
+cp dot.mkshrc /usr/share/doc/mksh/examples
+chmod 644 /usr/share/doc/mksh/examples/dot.mkshrc
+
+mkdir -p /usr/share/man/man1
+cp mksh.1 /usr/share/man/man1
+chmod 644 /usr/share/man/man1/mksh.1
