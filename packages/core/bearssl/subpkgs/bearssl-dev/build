@@ -1,4 +1,4 @@
 cd "bearssl-${version}" || exit 1
 
 chmod 644 inc/*
-mv inc/* /usr/include
+cp inc/* /usr/include
